@@ -1,0 +1,12 @@
+.container
+  .row
+    h1 Welcome
+  .row
+    .col-md-6
+      p oups
+    .col-md-6
+      p oups
+  .row
+    - @taxonomies.each do |taxonomy|
+      ul
+        li = taxonomy.name
