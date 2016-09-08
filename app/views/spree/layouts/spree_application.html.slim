@@ -1,0 +1,19 @@
+doctype html
+html lang="en"
+
+  head data-hook="inside_head"
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    = render partial: 'spree/shared/head'
+
+  body class=body_class data-hook="body" id=("#{@body_id || 'default'}")
+    = render partial: 'spree/shared/google_analytics.js'
+    = render partial: 'spree/shared/header'
+
+    .row data-hook=""
+      = breadcrumbs(@taxon)
+      = render partial: 'spree/shared/sidebar' if content_for? :sidebar
+      #content class=("#{!content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9"}") data-hook=""
+        = flash_messages
+        = yield
+      = yield :templates
+      

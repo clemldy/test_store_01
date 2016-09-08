@@ -1,0 +1,11 @@
+#spree-header {
+  background: white;
+  margin-bottom: 0;
+  .nav a {
+    color: white;
+
+    &:hover, &:focus {
+      background: rgba(#222, 0.4);
+    }
+  }
+}

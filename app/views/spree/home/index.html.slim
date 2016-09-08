@@ -1,12 +1,17 @@
+.bg-image
+
 .container
+  .row.text-center
+    h2 Notre selection du moment
+  hr
   .row
-    h1 Welcome
+    = render partial: 'spree/shared/products', locals: { products: @products }
+.container
+  .row.text-center
+    h2 Les bons plans
+    hr
+    p Des petits prix et des conseils pour vous aider à bien choisir.
   .row
-    .col-md-6
-      p oups
-    .col-md-6
-      p oups
-  .row
-    - @taxonomies.each do |taxonomy|
-      ul
-        li = taxonomy.name
+    .col-md-4
+      .card
+        p hello
