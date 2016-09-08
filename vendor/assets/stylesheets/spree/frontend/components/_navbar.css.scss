@@ -1,0 +1,57 @@
+#top-bar {
+  position: relative;
+  background: #eee;
+  display: block;
+  min-height: 30px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    opacity: 0.7;
+    a {
+      color: #666;
+      display: block;
+      font-size: 11px;
+      line-height: 30px;
+      padding: 0 15px;
+      text-transform: uppercase;
+    }
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.navbar-default {
+  background-color: white;
+}
+
+.navbar-collapse {
+  text-align: center !important;
+  padding: 5px 0 !important;
+}
+
+.navbar-one {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navbar-form {
+  margin: 15px 0;
+}
+
+.navbar-brand {
+  img {
+    height: 50px;
+    width: auto;
+    padding: 0px;
+  }
+}
