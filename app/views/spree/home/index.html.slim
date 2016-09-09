@@ -1,16 +1,19 @@
 .bg-image
 
 .container
-  .row.text-center
-    h2 Notre selection du moment
-  hr
-  .row
-    = render partial: 'spree/shared/products', locals: { products: @products }
+  .selection-block
+    .row.text-center
+      h2.title Notre selection du moment
+      .line
+      p Découvrez la sélection de nos produits
+    .row.padded
+      = render partial: 'spree/shared/products', locals: { products: @products }
 .container
-  .row.text-center
-    h2 Les bons plans
-    hr
-    p Des petits prix et des conseils pour vous aider à bien choisir.
+  .selection-block
+    .row.text-center
+      h2.title Nos agences
+      .line
+      p Découvrez nos agences dans toute la France
   .row
     .col-md-4
       .card

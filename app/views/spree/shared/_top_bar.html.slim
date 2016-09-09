@@ -16,6 +16,10 @@
           = link_to spree.account_path do
             i.fa.fa-tachometer
             = Spree.t(:my_account)
+        li
+          = link_to spree_logout_path do
+            i.fa.fa-sign-out
+            = Spree.t(:logout)
       - else
         li
           = link_to spree_login_path do

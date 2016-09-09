@@ -1,0 +1,35 @@
+.product-panel {
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 0px -2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(221, 221, 221);
+  padding: 10px;
+  .title {
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 0px 0px 0px 5px;
+    margin: 20px 0;
+    height: 40px;
+  }
+  .links {
+    height: 25px;
+  }
+  img {
+    height: 200px;
+    width: 200px;
+  }
+  .price {
+    float: left;
+  color: #A00A12;
+  line-height: 25px;
+  padding: 0 0 0 5px;
+  font-weight: normal;
+  font-size: 16px;
+  }
+}
