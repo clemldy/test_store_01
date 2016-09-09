@@ -37,3 +37,39 @@
 .title {
   margin: 20px 0;
 }
+
+#map {
+  background: url(image_path('spree/frontend/bg/carte-agences.png'));
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center;
+  min-height:          50vh;
+  z-index:             1;
+  position:            relative;
+}
+
+.reinssurance-block {
+  background: #eee;
+  margin-top: 2em;
+  .icon-container {
+    text-align: center;
+  }
+  .icon {
+    font-size: 25px;
+    background-color: #A00A12;
+    color: #FFF;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 20px 0;
+  }
+  .content-container {
+    text-align: left;
+    h4 {
+      margin-bottom: 5px;
+      margin-top: 35px;
+      color: #666;
+      font-size: 16px;
+    }
+  }
+}

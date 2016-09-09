@@ -1,0 +1,35 @@
+#footer {
+  background: #222;
+  padding-top: 20px;
+  color: white;
+  h5 {
+    border-bottom: 1px solid #666;
+    margin: 0 0 20px 0;
+    display: block;
+    padding-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  h5::after {
+    content: "";
+    height: 1px;
+    background: #A00A12;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 60px;
+  }
+  .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .links.underline {
+    li {
+      line-height: 2.5em;
+      border-bottom: 1px solid #333;
+      display: block;
+    }
+  }
+}
