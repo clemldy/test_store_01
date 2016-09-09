@@ -1,4 +1,5 @@
 nav.col-md-12
   #main-nav-bar.navbar
     ul.nav.navbar-nav data-hook=""
-      li#home-link data-hook="" = link_to Spree.t(:home), spree.root_path
+      - @taxons.each do |taxon|
+        li = link_to taxon.name, seo_url(taxon)
